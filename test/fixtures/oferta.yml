@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titulo: MyString
+  tipoResiduo_id: 
+  subtipoResiduo_id: 
+  desde: 2015-04-18
+  hasta: 2015-04-18
+  transporte: false
+  atencionDesde: 2015-04-18 17:33:18
+  atencionHasta: 2015-04-18 17:33:18
+
+two:
+  titulo: MyString
+  tipoResiduo_id: 
+  subtipoResiduo_id: 
+  desde: 2015-04-18
+  hasta: 2015-04-18
+  transporte: false
+  atencionDesde: 2015-04-18 17:33:18
+  atencionHasta: 2015-04-18 17:33:18

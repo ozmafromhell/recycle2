@@ -1,0 +1,49 @@
+<%= form_for(@ofertum) do |f| %>
+  <% if @ofertum.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@ofertum.errors.count, "error") %> prohibited this ofertum from being saved:</h2>
+
+      <ul>
+      <% @ofertum.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :titulo %><br>
+    <%= f.text_field :titulo %>
+  </div>
+  <div class="field">
+    <%= f.label :tipoResiduo_id %><br>
+    <%= f.text_field :tipoResiduo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :subtipoResiduo_id %><br>
+    <%= f.text_field :subtipoResiduo_id %>
+  </div>
+  <div class="field">
+    <%= f.label :desde %><br>
+    <%= f.date_select :desde %>
+  </div>
+  <div class="field">
+    <%= f.label :hasta %><br>
+    <%= f.date_select :hasta %>
+  </div>
+  <div class="field">
+    <%= f.label :transporte %><br>
+    <%= f.check_box :transporte %>
+  </div>
+  <div class="field">
+    <%= f.label :atencionDesde %><br>
+    <%= f.time_select :atencionDesde %>
+  </div>
+  <div class="field">
+    <%= f.label :atencionHasta %><br>
+    <%= f.time_select :atencionHasta %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

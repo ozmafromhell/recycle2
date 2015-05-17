@@ -1,0 +1,2 @@
+module SubtipoResiduosHelper
+end

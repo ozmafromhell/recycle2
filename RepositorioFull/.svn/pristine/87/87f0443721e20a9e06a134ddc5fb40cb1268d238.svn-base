@@ -1,0 +1,5 @@
+<h1>New subtipo_residuo</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', subtipo_residuos_path %>

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @intere.usuario %>
+</p>
+
+<p>
+  <strong>Oferta:</strong>
+  <%= @intere.oferta %>
+</p>
+
+<p>
+  <strong>Motivo:</strong>
+  <%= @intere.motivo %>
+</p>
+
+<p>
+  <strong>Dinero:</strong>
+  <%= @intere.dinero %>
+</p>
+
+<p>
+  <strong>Material:</strong>
+  <%= @intere.material %>
+</p>
+
+<p>
+  <strong>Otro:</strong>
+  <%= @intere.otro %>
+</p>
+
+<p>
+  <strong>Mensaje:</strong>
+  <%= @intere.mensaje %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @intere.fecha %>
+</p>
+
+<%= link_to 'Edit', edit_intere_path(@intere) %> |
+<%= link_to 'Back', interes_path %>

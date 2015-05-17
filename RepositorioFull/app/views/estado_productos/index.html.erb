@@ -1,0 +1,27 @@
+<h1>Listing estado_productos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Estado</th>
+      <th>Oferta</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @estado_productos.each do |estado_producto| %>
+      <tr>
+        <td><%= estado_producto.estado %></td>
+        <td><%= estado_producto.oferta %></td>
+        <td><%= link_to 'Show', estado_producto %></td>
+        <td><%= link_to 'Edit', edit_estado_producto_path(estado_producto) %></td>
+        <td><%= link_to 'Destroy', estado_producto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Estado producto', new_estado_producto_path %>

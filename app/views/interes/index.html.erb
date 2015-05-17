@@ -1,0 +1,39 @@
+<h1>Listing interes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Oferta</th>
+      <th>Motivo</th>
+      <th>Dinero</th>
+      <th>Material</th>
+      <th>Otro</th>
+      <th>Mensaje</th>
+      <th>Fecha</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @interes.each do |intere| %>
+      <tr>
+        <td><%= intere.usuario %></td>
+        <td><%= intere.oferta %></td>
+        <td><%= intere.motivo %></td>
+        <td><%= intere.dinero %></td>
+        <td><%= intere.material %></td>
+        <td><%= intere.otro %></td>
+        <td><%= intere.mensaje %></td>
+        <td><%= intere.fecha %></td>
+        <td><%= link_to 'Show', intere %></td>
+        <td><%= link_to 'Edit', edit_intere_path(intere) %></td>
+        <td><%= link_to 'Destroy', intere, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Intere', new_intere_path %>

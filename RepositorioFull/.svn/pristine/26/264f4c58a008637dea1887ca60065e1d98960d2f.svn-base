@@ -1,0 +1,49 @@
+<%= form_for(@intere) do |f| %>
+  <% if @intere.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@intere.errors.count, "error") %> prohibited this intere from being saved:</h2>
+
+      <ul>
+      <% @intere.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :usuario_id %><br>
+    <%= f.text_field :usuario_id %>
+  </div>
+  <div class="field">
+    <%= f.label :oferta_id %><br>
+    <%= f.text_field :oferta_id %>
+  </div>
+  <div class="field">
+    <%= f.label :motivo %><br>
+    <%= f.text_area :motivo %>
+  </div>
+  <div class="field">
+    <%= f.label :dinero %><br>
+    <%= f.check_box :dinero %>
+  </div>
+  <div class="field">
+    <%= f.label :material %><br>
+    <%= f.check_box :material %>
+  </div>
+  <div class="field">
+    <%= f.label :otro %><br>
+    <%= f.text_field :otro %>
+  </div>
+  <div class="field">
+    <%= f.label :mensaje %><br>
+    <%= f.text_area :mensaje %>
+  </div>
+  <div class="field">
+    <%= f.label :fecha %><br>
+    <%= f.datetime_select :fecha %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

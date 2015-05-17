@@ -1,0 +1,27 @@
+<h1>Listing imagen_oferta</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Imagen</th>
+      <th>Oferta</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @imagen_oferta.each do |imagen_ofertum| %>
+      <tr>
+        <td><%= imagen_ofertum.imagen %></td>
+        <td><%= imagen_ofertum.oferta %></td>
+        <td><%= link_to 'Show', imagen_ofertum %></td>
+        <td><%= link_to 'Edit', edit_imagen_ofertum_path(imagen_ofertum) %></td>
+        <td><%= link_to 'Destroy', imagen_ofertum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Imagen ofertum', new_imagen_ofertum_path %>

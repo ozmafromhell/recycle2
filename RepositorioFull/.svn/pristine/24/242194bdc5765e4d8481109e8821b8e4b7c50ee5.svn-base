@@ -1,0 +1,27 @@
+<h1>Listing requieros</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Tiporesiduo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @requieros.each do |requiero| %>
+      <tr>
+        <td><%= requiero.usuario %></td>
+        <td><%= requiero.tipoResiduo %></td>
+        <td><%= link_to 'Show', requiero %></td>
+        <td><%= link_to 'Edit', edit_requiero_path(requiero) %></td>
+        <td><%= link_to 'Destroy', requiero, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Requiero', new_requiero_path %>

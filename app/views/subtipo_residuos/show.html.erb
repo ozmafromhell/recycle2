@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @subtipo_residuo.nombre %>
+</p>
+
+<p>
+  <strong>Tiporesiduo:</strong>
+  <%= @subtipo_residuo.tipoResiduo %>
+</p>
+
+<%= link_to 'Edit', edit_subtipo_residuo_path(@subtipo_residuo) %> |
+<%= link_to 'Back', subtipo_residuos_path %>

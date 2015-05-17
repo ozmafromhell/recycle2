@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @ofertum.titulo %>
+</p>
+
+<p>
+  <strong>Tiporesiduo:</strong>
+  <%= @ofertum.tipoResiduo %>
+</p>
+
+<p>
+  <strong>Subtiporesiduo:</strong>
+  <%= @ofertum.subtipoResiduo %>
+</p>
+
+<p>
+  <strong>Desde:</strong>
+  <%= @ofertum.desde %>
+</p>
+
+<p>
+  <strong>Hasta:</strong>
+  <%= @ofertum.hasta %>
+</p>
+
+<p>
+  <strong>Transporte:</strong>
+  <%= @ofertum.transporte %>
+</p>
+
+<p>
+  <strong>Atenciondesde:</strong>
+  <%= @ofertum.atencionDesde %>
+</p>
+
+<p>
+  <strong>Atencionhasta:</strong>
+  <%= @ofertum.atencionHasta %>
+</p>
+
+<%= link_to 'Edit', edit_ofertum_path(@ofertum) %> |
+<%= link_to 'Back', oferta_path %>

@@ -1,0 +1,39 @@
+<h1>Listing oferta</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Titulo</th>
+      <th>Tiporesiduo</th>
+      <th>Subtiporesiduo</th>
+      <th>Desde</th>
+      <th>Hasta</th>
+      <th>Transporte</th>
+      <th>Atenciondesde</th>
+      <th>Atencionhasta</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @oferta.each do |ofertum| %>
+      <tr>
+        <td><%= ofertum.titulo %></td>
+        <td><%= ofertum.tipoResiduo %></td>
+        <td><%= ofertum.subtipoResiduo %></td>
+        <td><%= ofertum.desde %></td>
+        <td><%= ofertum.hasta %></td>
+        <td><%= ofertum.transporte %></td>
+        <td><%= ofertum.atencionDesde %></td>
+        <td><%= ofertum.atencionHasta %></td>
+        <td><%= link_to 'Show', ofertum %></td>
+        <td><%= link_to 'Edit', edit_ofertum_path(ofertum) %></td>
+        <td><%= link_to 'Destroy', ofertum, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ofertum', new_ofertum_path %>

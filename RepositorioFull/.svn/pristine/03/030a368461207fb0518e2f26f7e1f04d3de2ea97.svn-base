@@ -1,0 +1,25 @@
+<%= form_for(@requiero) do |f| %>
+  <% if @requiero.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@requiero.errors.count, "error") %> prohibited this requiero from being saved:</h2>
+
+      <ul>
+      <% @requiero.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :usuario_id %><br>
+    <%= f.text_field :usuario_id %>
+  </div>
+  <div class="field">
+    <%= f.label :tipoResiduo_id %><br>
+    <%= f.text_field :tipoResiduo_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

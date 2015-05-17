@@ -1,0 +1,6 @@
+<h1>Editing subtipo_residuo</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @subtipo_residuo %> |
+<%= link_to 'Back', subtipo_residuos_path %>

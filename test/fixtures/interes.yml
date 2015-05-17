@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  usuario_id: 
+  oferta_id: 
+  motivo: MyText
+  dinero: false
+  material: false
+  otro: MyString
+  mensaje: MyText
+  fecha: 2015-04-18 17:33:50
+
+two:
+  usuario_id: 
+  oferta_id: 
+  motivo: MyText
+  dinero: false
+  material: false
+  otro: MyString
+  mensaje: MyText
+  fecha: 2015-04-18 17:33:50

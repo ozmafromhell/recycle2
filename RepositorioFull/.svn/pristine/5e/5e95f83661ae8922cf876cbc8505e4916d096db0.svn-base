@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @alcance.usuario %>
+</p>
+
+<p>
+  <strong>Comuna:</strong>
+  <%= @alcance.comuna %>
+</p>
+
+<%= link_to 'Edit', edit_alcance_path(@alcance) %> |
+<%= link_to 'Back', alcances_path %>

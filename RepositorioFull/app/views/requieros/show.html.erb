@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Usuario:</strong>
+  <%= @requiero.usuario %>
+</p>
+
+<p>
+  <strong>Tiporesiduo:</strong>
+  <%= @requiero.tipoResiduo %>
+</p>
+
+<%= link_to 'Edit', edit_requiero_path(@requiero) %> |
+<%= link_to 'Back', requieros_path %>

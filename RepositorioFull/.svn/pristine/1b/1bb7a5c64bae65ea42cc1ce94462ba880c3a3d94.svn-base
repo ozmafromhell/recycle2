@@ -1,0 +1,6 @@
+<h1>Editing imagen_ofertum</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @imagen_ofertum %> |
+<%= link_to 'Back', imagen_oferta_path %>

@@ -1,0 +1,27 @@
+<h1>Listing subtipo_residuos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Tiporesiduo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @subtipo_residuos.each do |subtipo_residuo| %>
+      <tr>
+        <td><%= subtipo_residuo.nombre %></td>
+        <td><%= subtipo_residuo.tipoResiduo %></td>
+        <td><%= link_to 'Show', subtipo_residuo %></td>
+        <td><%= link_to 'Edit', edit_subtipo_residuo_path(subtipo_residuo) %></td>
+        <td><%= link_to 'Destroy', subtipo_residuo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Subtipo residuo', new_subtipo_residuo_path %>

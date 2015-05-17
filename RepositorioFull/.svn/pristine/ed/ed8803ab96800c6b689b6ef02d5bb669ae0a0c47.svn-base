@@ -1,0 +1,27 @@
+<h1>Listing alcances</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Usuario</th>
+      <th>Comuna</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @alcances.each do |alcance| %>
+      <tr>
+        <td><%= alcance.usuario %></td>
+        <td><%= alcance.comuna %></td>
+        <td><%= link_to 'Show', alcance %></td>
+        <td><%= link_to 'Edit', edit_alcance_path(alcance) %></td>
+        <td><%= link_to 'Destroy', alcance, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Alcance', new_alcance_path %>

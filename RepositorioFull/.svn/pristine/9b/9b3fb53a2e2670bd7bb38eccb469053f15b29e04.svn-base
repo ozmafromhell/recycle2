@@ -1,0 +1,6 @@
+<h1>Editing tipo_residuo</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @tipo_residuo %> |
+<%= link_to 'Back', tipo_residuos_path %>
